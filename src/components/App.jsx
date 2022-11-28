@@ -1,25 +1,17 @@
-// import {Container} from './Container.styled';
+import {Section, Container, Heading} from './Container.styled';
 // import {Heading} from './Heading.styled';
 import user from 'data/user.json';
+import data from 'data/data.json';
 import { Profile } from 'profile/ProfileCard';
+import {Statistics} from 'statistics/Statistics'
 
 export const App = () => {
   return (
-    <section>
-      <div style={{
-  maxWidth: 1200,
-  marginLeft: 'auto',
-  marginRight: 'auto',
-}}>
-        <h2 style={{
-  fontSize: 22,
-  fontWeight: 700,
-  color: "dark",
-  marginBottom: 50,
-  textAlign: "center",
-}}>
+    <Section>
+      <Container>
+        <Heading>
           Task 1
-        </h2>
+        </Heading>
         {<Profile
   username={user.username}
   tag={user.tag}
@@ -29,39 +21,21 @@ export const App = () => {
 />}
         
 
-        <h2 style={{
-  fontSize: 22,
-  fontWeight: 700,
-  color: "dark",
-  marginBottom: 50,
-  textAlign: "center",
-}}>
+        <Heading>
           Task 2
-        </h2>
-        {/* <Statistics title='Main Statistics' stats={data} /> */}
+        </Heading>
+        {<Statistics title="Upload stats" stats={data} />}
 
-        <h2 style={{
-  fontSize: 22,
-  fontWeight: 700,
-  color: "dark",
-  marginBottom: 50,
-  textAlign: "center",
-}}>
+        <Heading>
           Task 3
-        </h2>
+        </Heading>
         {/* <ForbesList list={forbes} /> */}
 
-        <h2 style={{
-  fontSize: 22,
-  fontWeight: 700,
-  color: "dark",
-  marginBottom: 50,
-  textAlign: "center",
-}}>
+        <Heading>
           Task 4
-        </h2>
+        </Heading>
         {/* <CryptoHistory /> */}
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
