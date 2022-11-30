@@ -29,6 +29,7 @@ export const FriendItem = styled.li`
 `;
 
 export const FriendListSpan = styled.span`
+backgroundColor: getBgColorStatus(isOnline);
 // display: flex;
 // align-items: center;
 // justify-content: center;

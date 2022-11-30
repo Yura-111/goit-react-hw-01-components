@@ -1,15 +1,15 @@
 import {FriendListBord} from 'friend_list/FriendList.styled';
 import {FriendListItem} from 'friend_list/FriendListCard';
 
-export const FriendList = ({list}) => {
+export const FriendList = ({friends}) => {
     return (
         <FriendListBord>
-            {list && list.map((item) => (
+            {friends.map(({id, avatar, isOnline, name}) => (
             <FriendListItem
-            key={item.id}
-            avatar={item.avatar}
-            isOnline={item.isOnline}
-            name={item.name}
+            key={id}
+            avatar={avatar}
+            isOnline={isOnline}
+            name={name}
             />
             ))}
         </FriendListBord>

@@ -1,25 +1,30 @@
 // import PropTypes from 'prop-types';
-import {TransactionsItems} from 'transactions/TransactionsItems';
+// import {TransactionsItems} from 'transactions/TransactionsItems';
 import {TransactionHistoryTable, BordTransaction, } from 'transactions/Transactions.styled';
-import {TransactionsHad} from 'transactions/TransactionsHad';
+// import {TransactionsHad} from 'transactions/TransactionsHad';
+import {TransactionThead, TransactionHistoryBord, BoxTransaction} from 'transactions/Transactions.styled';
+import {TransactionList, TransactionListName} from 'transactions/Transactions.styled';
 
-export const TransactionHistory = ({lists, type, amount, currency}) => {
+export const TransactionHistory = ({item}) => {
     return (
-    <TransactionHistoryTable lists={{lists}}>
-            <TransactionsHad
-            type={type}
-            amount={amount}
-            currency={currency}
-            ></TransactionsHad>
+    <TransactionHistoryTable >
+        <TransactionThead>
+            <TransactionHistoryBord>
+                <BoxTransaction>Type</BoxTransaction>
+                <BoxTransaction>Amount</BoxTransaction>
+                <BoxTransaction>Currency</BoxTransaction>
+            </TransactionHistoryBord>
+        </TransactionThead>
         <BordTransaction>
-            {lists && lists.map(list => (
-            <TransactionsItems
-            key={list.id}
-            type={list.type}
-            amount={list.amount}
-            currency={list.currency}
-            ></TransactionsItems>
-            ))}  
+            {item.map(({id, type, amount, currency}) => {
+                return (
+                    <TransactionList key={id}>
+                        <TransactionListName>{type}</TransactionListName>
+                        <TransactionListName>{amount}</TransactionListName>
+                        <TransactionListName>{currency}</TransactionListName>
+                    </TransactionList>
+                )
+            })}  
         </BordTransaction>
         </TransactionHistoryTable>
         );
