@@ -1,47 +1,43 @@
 import styled from "styled-components";
 
+// --- FriendList ---
+
 export const FriendListBord = styled.ul`
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-around;
-  // margin-top: 0;
-  // margin-bottom: 0;
-  // margin-right: auto;
-  // margin-left: auto;
-  // padding: 0;
-  // gap: 5px;
-  // max-width: 300px;
-  // background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  width: 300px;
 `;
 
+// --- FriendListItem ---
+
 export const FriendItem = styled.li`
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-around;
-  // margin-top: 0;
-  // margin-bottom: 0;
-  // margin-right: auto;
-  // margin-left: auto;
-  // padding: 0;
-  // gap: 5px;
-  // max-width: 300px;
-  // background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: space-evenly;
+  background-color:  rgb(248, 248, 237);
+  border: 1px solid rgb(194, 191, 191);
+  border-radius: 3px;
 `;
 
 export const FriendListSpan = styled.span`
-backgroundColor: getBgColorStatus(isOnline);
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// margin-bottom: 10px;
+  background-color: ${props => (props.isOnline ? 'green' : 'red')};
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 `;
 
 export const AvatarImg = styled.img`
-    // margin-top: 16px;
-    // border-radius: 50%;
-    // width: 80px`;
+  border-radius: 4px;
+`;
 
 
 export const FriendListName = styled.p`
-    // margin-top: 10px;
-    `;
+  font-weight: bold;
+`; 

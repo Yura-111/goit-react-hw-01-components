@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 // import {TransactionsItems} from 'transactions/TransactionsItems';
 import {TransactionHistoryTable, BordTransaction, } from 'transactions/Transactions.styled';
 // import {TransactionsHad} from 'transactions/TransactionsHad';
@@ -15,17 +15,29 @@ export const TransactionHistory = ({item}) => {
                 <BoxTransaction>Currency</BoxTransaction>
             </TransactionHistoryBord>
         </TransactionThead>
+
         <BordTransaction>
-            {item.map(({id, type, amount, currency}) => {
+            {item && item.map(({id, type, amount, currency}) => {
                 return (
                     <TransactionList key={id}>
                         <TransactionListName>{type}</TransactionListName>
                         <TransactionListName>{amount}</TransactionListName>
                         <TransactionListName>{currency}</TransactionListName>
                     </TransactionList>
-                )
+                );
             })}  
         </BordTransaction>
-        </TransactionHistoryTable>
-        );
-        };
+    </TransactionHistoryTable>
+    );
+};
+
+TransactionHistory.propTypes = {
+    item: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            type: PropTypes.number.isRequired,
+            amount: PropTypes.number.isRequired,
+            currency: PropTypes.number.isRequired
+        }).isRequired
+    )
+};
