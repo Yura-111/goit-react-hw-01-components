@@ -2,72 +2,42 @@ import styled from "styled-components";
 
 // ----Transaction---
 export const TransactionHistoryTable = styled.table`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 0;
-  margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
-  padding: 0;
-  // gap: 5px;
-  max-width: 300px;
-  // background-color: blueviolet;
+  margin-bottom: 30px;
+  width: 800px;
+  border-radius: 4px;
+  border: 1px solid rgb(194, 191, 191);
 `;
 
-// ---TransactionsHad---
-
 export const TransactionThead = styled.thead`
-  background-color: blue;
+  background-color: rgb(0, 153, 255);
 `;
 
 export const TransactionHistoryBord  = styled.tr`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+  // display: flex;
 `;
 
 export const BoxTransaction = styled.th`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // text-align: center;
+padding-top: 15px;
+padding-bottom: 15px;
+font-size: 18px;
+color: #ffffff;
 `;
 
 // ---TransactionsItems---
 
 export const BordTransaction = styled.tbody`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  // margin-top: 0;
-  // margin-bottom: 0;
-  // margin-right: auto;
-  // margin-left: auto;
-  // padding: 0;
-  // gap: 5px;
-  // max-width: 300px;
-  // background-color: blueviolet;
+  // display: flex;
 `;
 
 export const TransactionList  = styled.tr`
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-around;
-  // margin-top: 0;
-  // margin-bottom: 0;
-  // margin-right: auto;
-  // margin-left: auto;
-  // padding: 0;
-  // gap: 5px;
-  // max-width: 300px;
-  // background-color: blueviolet;
+  text-align: center;
 `;
 
 export const TransactionListName = styled.td`
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// margin-bottom: 10px;
+padding-top: 6px;
+padding-bottom: 6px;
+background-color: rgb(179, 239, 247);
+border-top: 1px solid rgb(194, 191, 191);
 `;

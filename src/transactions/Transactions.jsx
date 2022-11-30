@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
-// import {TransactionsItems} from 'transactions/TransactionsItems';
+import {TransactionsItems} from 'transactions/TransactionsItems';
 import {TransactionHistoryTable, BordTransaction, } from 'transactions/Transactions.styled';
-// import {TransactionsHad} from 'transactions/TransactionsHad';
 import {TransactionThead, TransactionHistoryBord, BoxTransaction} from 'transactions/Transactions.styled';
-import {TransactionList, TransactionListName} from 'transactions/Transactions.styled';
+import {TransactionList} from 'transactions/Transactions.styled';
 
-export const TransactionHistory = ({item}) => {
+export const TransactionHistory = ({items}) => {
     return (
     <TransactionHistoryTable >
         <TransactionThead>
@@ -17,12 +16,13 @@ export const TransactionHistory = ({item}) => {
         </TransactionThead>
 
         <BordTransaction>
-            {item && item.map(({id, type, amount, currency}) => {
+            {items.map(({id, type, amount, currency}) => {
                 return (
                     <TransactionList key={id}>
-                        <TransactionListName>{type}</TransactionListName>
-                        <TransactionListName>{amount}</TransactionListName>
-                        <TransactionListName>{currency}</TransactionListName>
+                        <TransactionsItems                        
+                        type={type}
+                        amount={amount}
+                        currency={currency} />
                     </TransactionList>
                 );
             })}  

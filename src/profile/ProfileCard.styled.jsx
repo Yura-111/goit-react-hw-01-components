@@ -12,13 +12,14 @@ export const DescriptionBox = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    border: 1px solid rgb(194, 191, 191);
     background-color:  rgb(248, 248, 237);
 `;
 
 export const AvatarImg = styled.img`
     margin-top: 16px;
-    border-radius: 2%;
+    border: 1px solid rgb(194, 191, 191);
+    border-radius: 50%;
     width: 80px`;
     
 

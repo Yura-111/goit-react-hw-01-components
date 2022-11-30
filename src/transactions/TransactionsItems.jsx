@@ -1,19 +1,19 @@
-// // import PropTypes from 'prop-types';
-// import {TransactionList, TransactionListName} from 'transactions/Transactions.styled';
+import PropTypes from 'prop-types';
+import {TransactionListName} from 'transactions/Transactions.styled';
 
-// export const TransactionsItems = ({type, amount, currency}) => {
-//     return (
-//         <TransactionList>
-//             <TransactionListName>{type}</TransactionListName>
-//             <TransactionListName>{amount}</TransactionListName>
-//             <TransactionListName>{currency}</TransactionListName>
-//         </TransactionList>
-//     );
-// };
+export const TransactionsItems = ({type, amount, currency}) => {
+    return (
+        <>
+            <TransactionListName>{type}</TransactionListName>
+            <TransactionListName>{amount}</TransactionListName>
+            <TransactionListName>{currency}</TransactionListName>
+        </>
+    );
+};
 
-// // TransactionsItems.propTypes = {
-// //     type: PropTypes.string.isRequired,
-// //     amount: PropTypes.string.isRequired,
-// //     currency: PropTypes.string.isRequired,
-// // };
+TransactionsItems.propTypes = {
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
+};
 

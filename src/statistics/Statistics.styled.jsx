@@ -5,6 +5,8 @@ import styled from "styled-components";
 export const StatisticsSection = styled.section` 
   margin-left: auto;
   margin-right: auto;
+  width: 300px;
+  border: 1px solid rgb(194, 191, 191);
 `;
 
 export const StatisticTitle = styled.h2`
@@ -17,8 +19,7 @@ export const StatisticTitle = styled.h2`
   margin-left: auto;
   color: grey;
   text-align: center;
-  max-width: 300px;
-  min-height: 80px;
+  height: 80px;
   background-color: #ffffff;
 `;
 
@@ -33,7 +34,6 @@ export const StatisticsList = styled.ul`
   margin-right: auto;
   margin-left: auto;
   padding: 0;
-  max-width: 300px;
   background-color: blueviolet;
 `;
 
