@@ -1,9 +1,13 @@
-import {Section, Container, Heading} from './Container.styled';
-// import {Heading} from './Heading.styled';
 import user from 'data/user.json';
 import data from 'data/data.json';
-import { Profile } from 'profile/ProfileCard';
-import {Statistics} from 'statistics/Statistics'
+import friends from "data/friends.json";
+import transactions from "data/transactions.json";
+
+import {Section, Container, Heading} from './Container.styled';
+import {Profile} from 'profile/ProfileCard';
+import {Statistics} from 'statistics/Statistics';
+import {FriendList} from 'friend_list/FriendList';
+import {TransactionHistory} from 'transactions/Transactions'
 
 export const App = () => {
   return (
@@ -29,12 +33,12 @@ export const App = () => {
         <Heading>
           Task 3
         </Heading>
-        {/* <ForbesList list={forbes} /> */}
+        {<FriendList friends={friends} />}
 
         <Heading>
           Task 4
         </Heading>
-        {/* <CryptoHistory /> */}
+        {<TransactionHistory items={transactions} />}
       </Container>
     </Section>
   );

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProfileBox = styled.div`
-    background-color: cadetblue;`;
+    // background-color: cadetblue;`;
 
 export const DescriptionBox = styled.div`
     display: flex;
