@@ -3,7 +3,7 @@ import {StatisticsSection,
     StatisticTitle,
     StatisticsList
 } from 'statistics/Statistics.styled';
-import {StatisticItem} from 'statistics/StatisticItem'
+import {StatisticItem} from 'statisticItem/StatisticItem'
 
 
 export const Statistics = ({title, stats}) => {

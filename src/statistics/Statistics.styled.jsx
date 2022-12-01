@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-// --- Statistic ---
-
 export const StatisticsSection = styled.section` 
   margin-left: auto;
   margin-right: auto;
@@ -23,8 +21,6 @@ export const StatisticTitle = styled.h2`
   background-color: #ffffff;
 `;
 
-// --- StatisticItem ---
-
 export const StatisticsList = styled.ul`
   display: flex;
   align-items: center;
@@ -35,28 +31,4 @@ export const StatisticsList = styled.ul`
   margin-left: auto;
   padding: 0;
   background-color: blueviolet;
-`;
-
-export const StatisticBox = styled.li`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  padding: 14.5px;
-`;
-
-export const StatisticsLabel = styled.span`
-display: flex;
-align-items: center;
-justify-content: center;
-color: #ffffff;
-`;
-
-export const PercentageStatistics = styled.span`
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 5px;
-color: #ffffff;
 `;

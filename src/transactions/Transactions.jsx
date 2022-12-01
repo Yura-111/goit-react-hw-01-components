@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {TransactionsItems} from 'transactions/TransactionsItems';
+import {TransactionsItems} from 'transactionsItems/TransactionsItems';
 import {TransactionHistoryTable, BordTransaction, } from 'transactions/Transactions.styled';
 import {TransactionThead, TransactionHistoryBord, BoxTransaction} from 'transactions/Transactions.styled';
 import {TransactionList} from 'transactions/Transactions.styled';

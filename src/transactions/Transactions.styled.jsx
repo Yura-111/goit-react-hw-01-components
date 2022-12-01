@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-// ----Transaction---
 export const TransactionHistoryTable = styled.table`
   margin-right: auto;
   margin-left: auto;
@@ -24,20 +23,10 @@ padding-bottom: 15px;
 font-size: 18px;
 color: #ffffff;
 `;
-
-// ---TransactionsItems---
-
-export const BordTransaction = styled.tbody`
-  // display: flex;
-`;
-
 export const TransactionList  = styled.tr`
   text-align: center;
 `;
 
-export const TransactionListName = styled.td`
-padding-top: 6px;
-padding-bottom: 6px;
-background-color: rgb(179, 239, 247);
-border-top: 1px solid rgb(194, 191, 191);
+export const BordTransaction = styled.tbody`
+  // display: flex;
 `;
