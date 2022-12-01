@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import {TransactionsItems} from 'transactionsItems/TransactionsItems';
-import {TransactionHistoryTable, BordTransaction, } from 'transactions/Transactions.styled';
-import {TransactionThead, TransactionHistoryBord, BoxTransaction} from 'transactions/Transactions.styled';
-import {TransactionList} from 'transactions/Transactions.styled';
+import {TransactionsItems} from 'components/transactionsItems/TransactionsItems';
+import {TransactionHistoryTable, BordTransaction, } from 'components/transactions/Transactions.styled';
+import {TransactionThead, TransactionHistoryBord, BoxTransaction} from 'components/transactions/Transactions.styled';
+import {TransactionList} from 'components/transactions/Transactions.styled';
 
 export const TransactionHistory = ({items}) => {
     return (

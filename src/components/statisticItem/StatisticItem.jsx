@@ -4,7 +4,7 @@ import {
     StatisticBox,
     StatisticsLabel,
     PercentageStatistics
-} from 'statisticItem/StatisticsItem.styled';
+} from 'components/statisticItem/StatisticsItem.styled';
 
 export const StatisticItem = ({label, percentage}) => {
   let collor = getRandomHexColor();
