@@ -5,13 +5,12 @@ import {StatisticsSection,
 } from 'components/statistics/Statistics.styled';
 import {StatisticItem} from 'components/statisticItem/StatisticItem'
 
-
 export const Statistics = ({title, stats}) => {
     return (
         <StatisticsSection>
         {title && <StatisticTitle>{title}</StatisticTitle>}
         <StatisticsList>
-            {stats.map(stat => {
+            {stats.map((stat) => {
                 
                 return (<StatisticItem 
                 key={stat.id}
@@ -27,7 +26,7 @@ export const Statistics = ({title, stats}) => {
 };
 
 Statistics.propTypes = {
-title: PropTypes.string.isRequired,
+title: PropTypes.string,
 stats: PropTypes.arrayOf(
     PropTypes.shape({
         id: PropTypes.string.isRequired,
